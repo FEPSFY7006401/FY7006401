@@ -2,21 +2,97 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>miauw</title>
+      <meta name+"viewport" content+"width=device-width, initial-scale=1.0" />
+    <title>miauw</title>
 
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&familoy=Yeseva+One&display=swap" rel="stylesheet">
+    <!--Google Fonts -->
+    <link href+"https://fonts.googleapis.com/css2?family=DM+Serif+Text&fafmily=Yeseva+One&display=swap" rel+"stylesheet">
 
-      <style>
-        * {margin: 0; padding: 0; box-sizing: border-box; }
+    <!--MathJax:configuration + loader-->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)'}, ['$', '$']],
+                displayMath: [['\\[', '\\]'], ['$$', '$$']],
+                packages: {'[+]': ['ams']}
+            },
+            options: {
+              skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+            }
+        };
+    </script>
+    <script async id="MathJax-script"
+      src="https://cdn,jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
-          body {
-            font-family: 'Yeseva One' , serif;
-            background: #915F6D;
-            color: black;
-            text-align: center;
-            padding: 1rem 2rem;
-            background: rgba
+    <img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
+      <h1><b>ENG0018 Computer Laboratory 2026/27</b></h1>
+      <h2>Student URN: 7006401</h2>
+
+    <style>
+      ...
       </style>
-  </head/>
+
+    <style>
+      * { margin:0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Yeseva One', serif;
+        background: #fef9f4;
+        color: black;
+        text-align: center;
+        padding: 2rem;
+        line-height: 1.8;
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-family: 'DM Serif Text', serif;
+        font-size: 3rem;
+        margin-bottom:0.5rem;
+        text-transform: lowercase;
+        margin-top: 6rem; /*clears the fixed nav */
+      }
+
+      .meta {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+
+      img.post-image {
+        width: 100%;
+        max-width: 800 px:
+      margin: 2rem auto;
+      display: block;
+      border-radius: 10px;
+      }
+
+      p {
+        max-width: 800px;
+        margin:0 auto 1.5rem auto;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          flex-direction: column;
+          background: rgba(255,255,255,0.95);
+          diplay: none;
+        }
+    </style>
+    </style>
+  </head>
+
+  <!-- Title of the essay -->
+  <h1> blah blah blah</h1>
+
+  <!-- Post image -->
+  <img src="INSERT FILE" alt="blah blah" class="post-image">
+
+  <!-- Met -->
+  <div class="meta">posted: whatever the date is | author: 7006401
