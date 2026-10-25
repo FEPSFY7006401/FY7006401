@@ -1,177 +1,213 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8" />
-      <meta name+"viewport" content+"width=device-width, initial-scale=1.0" />
-    <title>To What Extent Can the Apparent Inevitability of Failure Described by Murphy's Law Be Explained Through Probability Theory, Chaos Theory, and the Statistical Analysis of Physical Systems?</title>  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Google Fonts -->
-    <link href+"https://fonts.googleapis.com/css2?family=DM+Serif+Text&fafmily=Yeseva+One&display=swap" rel+"stylesheet">
+  <title>To What Extent Can the Apparent Inevitability of Failure Described by Murphy's Law Be Explained Through Probability Theory, Chaos Theory, and the Statistical Analysis of Physical Systems?</title>
 
-    <!--MathJax:configuration + loader-->
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['\\(', '\\)'}, ['$', '$']],
-                displayMath: [['\\[', '\\]'], ['$$', '$$']],
-                packages: {'[+]': ['ams']}
-            },
-            options: {
-              skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-            }
-        };
-    </script>
-    <script async id="MathJax-script"
-      src="https://cdn,jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Yeseva+One&display=swap" rel="stylesheet">
 
-    <img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
-      <h2><b>ENG0018 Computer Laboratory 2026/27</b></h2>
-      <h3>Student URN: 7006401</h3>
-
-    <style>
-      ...
-      </style>
-
-    <style>
-      * { margin:0; padding: 0; box-sizing: border-box; }
-
-      body {
-        font-family: 'Yeseva One', serif;
-        background: #FFFFFF;
-        color: black;
-        text-align: center;
-        padding: 2rem;
-        line-height: 1.8;
-        font-size: 1.2rem;
+  <!-- MathJax configuration -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']],
+        packages: {'[+]': ['ams']}
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
       }
+    };
+  </script>
 
-      h1 {
-        font-family: 'DM Serif Text', serif;
-        font-size: 3rem;
-        margin-bottom:0.5rem;
-        text-transform: lowercase;
-        margin-top: 6rem; /*clears the fixed nav */
-      }
+  <script async id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 
-      .meta {
-        font-size: 1rem;
-        color: #555;
-        margin-bottom: 2rem;
-      }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      img.post-image {
-        width: 100%;
-        max-width: 800 px:
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 24px;
+    }
+
+    body {
+      font-family: 'Yeseva One', serif;
+      background: #FFFFFF;
+      color: black;
+      text-align: center;
+      padding: 2rem;
+      line-height: 1.8;
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Text', serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-transform: lowercase;
+      margin-top: 2rem;
+    }
+
+    .meta {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    img.post-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
       margin: 2rem auto;
       display: block;
       border-radius: 10px;
+    }
+
+    p {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      text-align: center;
+    }
+
+    .research-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px 0;
+      margin: 20px 0;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .research-nav a {
+      display: inline-block;
+      padding: 9px 16px;
+      color: #222222;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .research-nav a:hover {
+      background-color: #222222;
+      color: #ffffff;
+      border-color: #222222;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      scroll-margin-top: 24px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
       }
 
-      p {
-        max-width: 800px;
-        margin:0 auto 1.5rem auto;
-        text-align: center;
+      h1 {
+        font-size: 2rem;
       }
 
-      @media (max-width: 768px) {
-        .nav-links {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          width: 100%;
-          flex-direction: column;
-          background: rgba(255,255,255,0.95);
-          diplay: none;
-        }
-    </style>
-    </style>
-  </head>
+      .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.95);
+        display: none;
+      }
+    }
+  </style>
+</head>
 
+<body>
+
+  <!-- Banner -->
+  <img src="WebBanner2026.png" alt="Banner" width="1200" height="300">
+
+  <h2><b>ENG0018 Computer Laboratory 2026/27</b></h2>
+  <h3>Student URN: 7006401</h3>
+
+  <!-- Title of the essay -->
+  <h1>
+    To What Extent Can the Apparent Inevitability of Failure Described by Murphy's Law Be Explained Through Probability Theory, Chaos Theory, and the Statistical Analysis of Physical Systems?
+  </h1>
+
+  <!-- Publication details -->
+  <div class="meta">Posted: [date] | Author: 7006401</div>
+
+  <!-- Navigation tabs: scroll to sections on this page -->
   <nav class="research-nav" aria-label="Research paper sections">
-    <a href="abstract">Abstract</a>
-    <a href="introduction">Introduction</a>
-    <a href="theory">Theory</a>
-    <a href="methods">Methods</a>
-    <a href="results">Results</a>
-    <a href="discussion">Discussion</a>
-    <a href="conclusion">Conclusion</a>
-    <a href="references">References</a>
+    <a href="#abstract">Abstract</a>
+    <a href="#introduction">Introduction</a>
+    <a href="#theory">Theory</a>
+    <a href="#methods">Methods</a>
+    <a href="#results">Results</a>
+    <a href="#discussion">Discussion</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#references">References</a>
   </nav>
 
-  .research-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 0;
-    margin: 20px 0;
-    border-top:1px solid ~-#e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .research-nav a {
-    display: inline-block;
-    padding: 9px 16px;
-    color: #222222;
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.2s ease
-                color 0.2s ease;
-  }
-
-.research-nav a:hover {
-    background-color: #222222;
-    color: #ffffff;
-    border-color: #222222;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  scroll-padding-top: 24px;
-  }
-  
-    
-  <!-- Title of the essay -->
-  <h1> To What Extent Can the Apparent Inevitability of Failure Described by Murphy's Law Be Explained Through Probability Theory, Chaos Theory, and the Statistical Analysis of Physical Systems? </h1>
-
-  <!-- Met -->
-  <div class="meta">posted: whatever the date is | author: 7006401</div>
-
+  <!-- Research sections -->
   <section id="abstract">
-    <h3>Abstract</h3>
+    <h2>Abstract</h2>
   </section>
 
   <section id="introduction">
-    <h3>Introduction</h3>
+    <h2>Introduction</h2>
+
     <p>It's likely that you've come across the quote, "If anything can go wrong, it will." It's often used as an indication of defeat in the face of adversity, but did you know that its original context was never intended to incite submission into preordained calamity but rather a reminder on the importance of preparation?</p>
-    <p>Murphy's law was first cited by Edward A Murphy Jr, who was an aerospace engineer in the 1940s. The term was coined, not to show acceptance of the fact that things naturally tend towards disorder, but rather to escape this chaos as best as one can through precaution and sensitivity. The existence of this law is not tolerance to all things going wrong — it is evidence that with readiness, many potential setbacks can be avoided.</p>
+
+    <p>Murphy's law was first cited by Edward A. Murphy Jr., who was an aerospace engineer in the 1940s. The term was coined, not to show acceptance of the fact that things naturally tend towards disorder, but rather to escape this chaos as best as one can through precaution and sensitivity. The existence of this law is not tolerance to all things going wrong — it is evidence that with readiness, many potential setbacks can be avoided.</p>
   </section>
 
   <section id="theory">
-    <h3>Theory</h3>
+    <h2>Theory</h2>
   </section>
 
   <section id="methods">
-    <h3>Methods</h3>
+    <h2>Methods</h2>
   </section>
 
   <section id="results">
-    <h3>Results</h3>
+    <h2>Results</h2>
   </section>
 
-  <section id="discussions">
-    <h3>Discussion</h3>
+  <section id="discussion">
+    <h2>Discussion</h2>
   </section>
 
   <section id="conclusion">
-    <h3>Conclusion</h3>
+    <h2>Conclusion</h2>
   </section>
 
   <section id="references">
-    <h3>References</h3>
+    <h2>References</h2>
   </section>
+
+</body>
+</html>
+
+      
+
+
+
+
+
 
